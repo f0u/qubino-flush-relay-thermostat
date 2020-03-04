@@ -250,7 +250,7 @@ metadata {
     input "autoTurnOff", "number", title: "Automatically Turn Off (minutes)", description: "Turn off, if left on after so many minutes", range: "0..542", displayDuringSetup: false
     input "temperatureOffset", "number", title: "Temperature Offset (°C)", description: "Adjust temperature by this many degrees °C", range: "-10..10", displayDuringSetup: false, defaultValue: 0
     input "temperatureReportOnChange", "number", title: "Temperature Reporting Change (°C)", description: "Reports temperature when the change is by this amount °C", displayDuringSetup: false, defaultValue: 0.5
-    input "costPerKwh", type: "number", title: "Cost per kWh", required: false, displayDuringSetup: false
+    input "costPerKwh", "number", title: "Cost per kWh", required: false, displayDuringSetup: false
   }
 }
 
